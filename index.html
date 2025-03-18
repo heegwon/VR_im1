@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>VR Image from Google Drive</title>
-    <meta name="description" content="VR Image Viewer using A-Frame and Google Drive">
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>VR Viewer</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-sky id="skybox" src=""></a-sky>
-      <a-camera></a-camera>
+      <a-sky src="https://drive.google.com/uc?id=12QOtof1ble-TyaOx8ziO1UA2YYmqTfCw"></a-sky>
     </a-scene>
-
-    <script>
-      // 구글 드라이브 이미지 직접 링크를 여기에 붙여넣으세요.
-      const imageURL = "https://drive.google.com/uc?id=12QOtof1ble-TyaOx8ziO1UA2YYmqTfCw";
-
-      // A-Frame skybox 엘리먼트를 가져옵니다.
-      const skybox = document.getElementById("skybox");
-
-      // skybox 이미지 URL을 설정합니다.
-      skybox.setAttribute("src", imageURL);
-    </script>
   </body>
 </html>
