@@ -8,7 +8,18 @@
 </head>
 <body>
     <a-scene>
-        <a-sky src="./assets/vr01.jpg"></a-sky>
+        <!-- 이미지 프리로드 -->
+        <a-assets>
+            <img id="vr-image" src="./assets/vr01.jpg">
+        </a-assets>
+
+        <!-- VR 환경 -->
+        <a-sky src="#vr-image"></a-sky>
+
+        <!-- 기본 카메라 설정 -->
+        <a-camera position="0 1.6 0">
+            <a-cursor></a-cursor>
+        </a-camera>
     </a-scene>
 </body>
 </html>
